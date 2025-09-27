@@ -1,0 +1,83 @@
+:root{
+    --yasil: #54d154;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+    background: url('../img/headerbg\ \(1\).jpg') center/cover;
+}
+
+nav{ 
+    padding-top: 5px;
+}
+menu li{
+    padding: 0 10px;
+}
+
+menu li a {
+    font: 500 1em "Proxima Nova";
+    color: #fff;
+}
+
+#search  { 
+    display: flex; 
+    justify-content: center;
+}
+#search input, #search button {
+    height: 27px;
+    border: none;
+    background: #ffffff80;
+    padding: 5px 15px;
+}
+#search input { border-radius:  1em 0 0 1em;} 
+#search button { border-radius:  0 1em 1em 0;}
+#search button img { height: 1.5em;}
+
+#title h1{
+    font: 700 2em "Montserrat";
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+#title button{
+    font: 1.4em "Proxima Nova";
+    color: #fff;
+    border: 0;
+    background: #54d154;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+#scroll{
+    display: inline-block;
+    font: 300 1em "Proxima Nova";
+    color: #111;
+    background-color: #c1bfbf80;
+    border-radius: 15px;
+    padding: 7px 12px;
+    margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    menu{ 
+        order: -1;
+        display: flex;
+    }
+
+    menu li a:hover, menu li a.active {
+        font-weight: bold;
+        border-top: 5px solid var(--yasil);
+    }
+
+    #title h1{ font-size: 3.4em; } 
+}
